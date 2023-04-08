@@ -9,10 +9,8 @@ const ingredients = [
 
 console.log(ingredients);
 
-const refs = {
-  items: document.querySelectorAll('.js-ingredients'),
-  ul: document.querySelector ('.ul'),
-}
+const ul = document.querySelector ('.js-list')
+
 
 const arr= [];
 for (i = 0; i < ingredients.length; i += 1) {
@@ -22,6 +20,6 @@ for (i = 0; i < ingredients.length; i += 1) {
 arr.push(li);
 }
 
-refs.ul.append(...arr);
+ul.append(...arr);
 
 console.log(arr);
