@@ -9,16 +9,16 @@ const ingredients = [
 
 console.log(ingredients);
 
-const ul = document.querySelector ('.js-list')
+const ul = document.querySelector ('#ingredients')
 
 
 const arr= [];
-for (i = 0; i < ingredients.length; i += 1) {
-  const li = document.createElement ('.li');
-  li.classList.add = item;
-  li.textContent = ingredients[i];
+ingredients.forEach(function (ingredient) {
+  const li = document.createElement ('li');
+  li.classList.add = 'item';
+  li.textContent = ingredient;
 arr.push(li);
-}
+})
 
 ul.append(...arr);
 
