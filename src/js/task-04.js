@@ -6,9 +6,9 @@ const refs = {
 
 let counterValue = 0;
 
-function bindClickEvents() {
-    refs.btnDecrementRef.addEventListener('click', () => {decrement(); updateValue() })
+function bindClickEvents() {   
     refs.btnIncrementRef.addEventListener('click', () => {increment(); updateValue() })
+    refs.btnDecrementRef.addEventListener('click', () => {decrement(); updateValue() })
 }
 
 function increment() {
